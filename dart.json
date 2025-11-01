@@ -1,0 +1,213 @@
+{
+	"Consumer Widget with watch": {
+		"prefix": "consumerwatch",
+		"description": "Creates a Riverpod Consumer Widget that uses ref.watch(). Requires a Riverpod package.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:flutter_riverpod/flutter_riverpod.dart';",
+			"",
+			"class ${1:} extends ConsumerWidget {",
+			"  const ${1:}({super.key});",
+			"",
+			" @override",
+			" Widget build(BuildContext context, WidgetRef ref) {",
+			"   final ${2:name} = ref.watch(${3:provider});",
+			"   return ${4:body};",
+			"}","}"
+		]
+	},
+	"Consumer Widget with listen": {
+		"prefix": "consumerlisten",
+		"description": "Creates a Riverpod ConsumerWidget that uses ref.listen()",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:flutter_riverpod/flutter_riverpod.dart';",
+			"",
+			"class ${1:} extends ConsumerWidget {",
+			"  const ${1:}({super.key});",
+			"",
+			" @override",
+			" Widget build(BuildContext context, WidgetRef ref) {",
+			"   final ${2:name} = ref.listen(${3:provider}, (previous, next) {",
+			"${4:}",
+			"});",
+			"}","}"
+		]
+	},
+	"Hook Consumer Widget with watch": {
+		"prefix": "hookconsumerwatch",
+		"description": "Creates a Riverpod HookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:hooks_riverpod/hooks_riverpod.dart';",
+			"import 'package:flutter_hooks/flutter_hooks.dart';",
+			"",
+			"class ${1:} extends HookConsumerWidget {",
+			"  const ${1:}({super.key});",
+			"",
+			" @override",
+			" Widget build(BuildContext context, WidgetRef ref) {",
+			"   final ${2:name} = ref.watch(${3:provider});",
+			"   return ${4:body};",
+			"}","}"
+		]
+	},
+	"Hook Consumer Widget with listen": {
+		"prefix": "hookconsumerlisten",
+		"description": "Creates a Riverpod HookConsumerWidget that uses ref.listen(). Requires a Riverpod package with hooks.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:hooks_riverpod/hooks_riverpod.dart';",
+			"import 'package:flutter_hooks/flutter_hooks.dart';",
+			"",
+			"class ${1:} extends HookConsumerWidget {",
+			"  const ${1:}({super.key});",
+			"",
+			" @override",
+			" Widget build(BuildContext context, WidgetRef ref) {",
+			"   final ${2:name} = ref.listen(${3:provider}, (previous, next) {",
+			"${4:}",
+			"});",
+			"}","}"
+		]
+	},
+	"Consumer stateful widget with watch": {
+		"prefix": "consumerstatefulwatch",
+		"description": "Creates a Riverpod ConsumerStatefulWidget that uses ref.watch(). Requires a Riverpod package.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:flutter_riverpod/flutter_riverpod.dart';",
+			"",
+			"class ${1:} extends ConsumerStatefulWidget {",
+			" const ${1:}({super.key});",
+			"",
+			" @override",
+			" ConsumerState<${1:}> createState() {",
+			" return _${1:}State();",
+			"}",
+			"}",
+			"",
+			"class _${1:} extends ConsumerState<${1:} {",
+			"",
+			"@override",
+			"Widget build(BuildContext context) {",
+			" final ${2:name} = ref.watch(${3:provider});",
+			" return ${4:body};",
+			"}",
+			"}"
+		]
+	},
+	"Stateful Hook Consumer Widget with watch": {
+		"prefix": "statefulhookwatch",
+		"description": "Creates a Riverpod StatefulHookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:hooks_riverpod/hooks_riverpod.dart';",
+			"import 'package:flutter_hooks/flutter_hooks.dart';",
+			"",
+			"class ${1:} extends StatefulHookConsumerWidget {",
+			" const ${1:}({super.key});",
+			"",
+			" @override",
+			" ConsumerState<${1:}> createState() {",
+			" return _${1:}State();",
+			"}",
+			"}",
+			"",
+			"class _${1:} extends ConsumerState<${1:} {",
+			"",
+			"@override",
+			"Widget build(BuildContext context) {",
+			" final ${2:name} = ref.watch(${3:provider});",
+			" return ${4:body};",
+			"}","}"
+		]
+	},
+	"Consumer stateful widget with listen": {
+		"prefix": "consumerstatefullisten",
+		"description": "Creates a Riverpod ConsumerStatefulWidget that uses ref.watch(). Requires a Riverpod package.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:flutter_riverpod/flutter_riverpod.dart';",
+			"",
+			"class ${1:} extends ConsumerStatefulWidget {",
+			" const ${1:}({super.key});",
+			"",
+			" @override",
+			" ConsumerState<${1:}> createState() {",
+			" return _${1:}State();",
+			"}",
+			"}",
+			"",
+			"class _${1:} extends ConsumerState<${1:} {",
+			"",
+			"@override",
+			"Widget build(BuildContext context) {",
+			"   final ${2:name} = ref.listen(${3:provider}, (previous, next) {",
+			"${4:}",
+			"});",
+			"}","}"
+		]
+	},
+	"Stateful Hook Consumer Widget with listen": {
+		"prefix": "statefulhooklisten",
+		"description": "Creates a Riverpod StatefulHookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import 'package:hooks_riverpod/hooks_riverpod.dart';",
+			"import 'package:flutter_hooks/flutter_hooks.dart';",
+			"",
+			"class ${1:} extends StatefulHookConsumerWidget {",
+			" const ${1:}({super.key});",
+			"",
+			" @override",
+			" ConsumerState<${1:}> createState() {",
+			" return _${1:}State();",
+			"}",
+			"}",
+			"",
+			"class _${1:} extends ConsumerState<${1:} {",
+			"",
+			"@override",
+			"Widget build(BuildContext context) {",
+			"   final ${2:name} = ref.listen(${3:provider}, (previous, next) {",
+			"${4:}",
+			"});",
+			"}","}"
+		]
+	},
+	"MediaQuery sizeOf ": {
+		"prefix": "mq.sizeOf",
+		"description": "Creates the MediaQuery.sizeOf method that is the preferred way to query height and width",
+		"body": "MediaQuery.sizeOf(context).${1:direction},"
+	},
+	"ref.watch()": {
+		"prefix": "refwatch",
+		"description": "Creates a ref.watch(). Requires a Riverpod package.",
+		"body": "final ${1:name} = ref.watch(${2:provider});"
+	},
+	"ref.read()": {
+		"prefix": "refread",
+		"description": "Creates a ref.read(). Requires a Riverpod package.",
+		"body": "ref.read(${1:provider})"
+	},
+	"reflisten": {
+		"prefix": "reflisten",
+		"description": "Creates a ref.listen(). Requires a Riverpod package.",
+		"body": [
+			"final ${1:name} = ref.listen(${2:provider}, (previous, next){",
+			"${3:}",
+			"});"
+		]
+	},	
+		"future main":{
+			"prefix": "futuremain",
+			"description": "Insert a Async main function entry point",
+			"body": [
+				"Future<void> main() async {",
+				" $0",
+				"}"
+			]
+		}
+		
+}
