@@ -1,6 +1,6 @@
 {
 	"Consumer Widget with watch": {
-		"prefix": "consumerwatch",
+		"prefix": "csmw",
 		"description": "Creates a Riverpod Consumer Widget that uses ref.watch(). Requires a Riverpod package.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -17,7 +17,7 @@
 		]
 	},
 	"Consumer Widget with listen": {
-		"prefix": "consumerlisten",
+		"prefix": "csml",
 		"description": "Creates a Riverpod ConsumerWidget that uses ref.listen()",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -35,7 +35,7 @@
 		]
 	},
 	"Hook Consumer Widget with watch": {
-		"prefix": "hookconsumerwatch",
+		"prefix": "hcsw",
 		"description": "Creates a Riverpod HookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -53,7 +53,7 @@
 		]
 	},
 	"Hook Consumer Widget with listen": {
-		"prefix": "hookconsumerlisten",
+		"prefix": "hcsl",
 		"description": "Creates a Riverpod HookConsumerWidget that uses ref.listen(). Requires a Riverpod package with hooks.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -72,7 +72,7 @@
 		]
 	},
 	"Consumer stateful widget with watch": {
-		"prefix": "consumerstatefulwatch",
+		"prefix": "cstfw",
 		"description": "Creates a Riverpod ConsumerStatefulWidget that uses ref.watch(). Requires a Riverpod package.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -87,7 +87,7 @@
 			"}",
 			"}",
 			"",
-			"class _${1:} extends ConsumerState<${1:} {",
+			"class _${1:}State extends ConsumerState<${1:}> {",
 			"",
 			"@override",
 			"Widget build(BuildContext context) {",
@@ -98,7 +98,7 @@
 		]
 	},
 	"Stateful Hook Consumer Widget with watch": {
-		"prefix": "statefulhookwatch",
+		"prefix": "hstfw",
 		"description": "Creates a Riverpod StatefulHookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -114,7 +114,7 @@
 			"}",
 			"}",
 			"",
-			"class _${1:} extends ConsumerState<${1:} {",
+			"class _${1:}State extends ConsumerState<${1:}> {",
 			"",
 			"@override",
 			"Widget build(BuildContext context) {",
@@ -124,7 +124,7 @@
 		]
 	},
 	"Consumer stateful widget with listen": {
-		"prefix": "consumerstatefullisten",
+		"prefix": "cstfl",
 		"description": "Creates a Riverpod ConsumerStatefulWidget that uses ref.watch(). Requires a Riverpod package.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -139,7 +139,7 @@
 			"}",
 			"}",
 			"",
-			"class _${1:} extends ConsumerState<${1:} {",
+			"class _${1:}State extends ConsumerState<${1:}> {",
 			"",
 			"@override",
 			"Widget build(BuildContext context) {",
@@ -150,7 +150,7 @@
 		]
 	},
 	"Stateful Hook Consumer Widget with listen": {
-		"prefix": "statefulhooklisten",
+		"prefix": "hstfl",
 		"description": "Creates a Riverpod StatefulHookConsumerWidget that uses ref.watch(). Requires a Riverpod package with hooks.",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -166,7 +166,7 @@
 			"}",
 			"}",
 			"",
-			"class _${1:} extends ConsumerState<${1:} {",
+			"class _${1:}State extends ConsumerState<${1:}> {",
 			"",
 			"@override",
 			"Widget build(BuildContext context) {",
@@ -177,7 +177,7 @@
 		]
 	},
 	"MediaQuery sizeOf ": {
-		"prefix": "mq.sizeOf",
+		"prefix": ".mqsizeOf",
 		"description": "Creates the MediaQuery.sizeOf method that is the preferred way to query height and width",
 		"body": "MediaQuery.sizeOf(context).${1:direction},"
 	},
