@@ -177,7 +177,7 @@
 		]
 	},
 	"MediaQuery sizeOf ": {
-		"prefix": ".mqsizeOf",
+		"prefix": "sizeof",
 		"description": "Creates the MediaQuery.sizeOf method that is the preferred way to query height and width",
 		"body": "MediaQuery.sizeOf(context).${1:direction},"
 	},
